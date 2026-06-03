@@ -2,20 +2,35 @@ import os
 import math
 import datetime
 import requests
+import json
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import ee
+from google.oauth2 import service_account
 
 app = Flask(__name__)
 CORS(app)
 
-# 🔑 Your OpenWeatherMap API Key has been directly embedded here:
+# 🔑 Your OpenWeatherMap API Key:
 OPENWEATHER_API_KEY = "21dcd1d4623a0832583bfd6c4e25c85b"
 GEE_PROJECT_ID = "ashijadhav20"
 
+# 🌐 Google Earth Engine Private Cloud Key Integration
 try:
-    ee.Initialize(project=GEE_PROJECT_ID)
-    print("Google Earth Engine initialized successfully on server cluster.")
+    # This directly parses your generated Google Cloud private key file 
+    gee_key_path = os.path.join(os.path.dirname(__file__), "ashijadhav20-cf363c29eaf3.json")
+    
+    if os.path.exists(gee_key_path):
+        with open(gee_key_path) as f:
+            service_account_info = json.load(f)
+        
+        credentials = service_account.Credentials.from_service_account_info(service_account_info)
+        ee.Initialize(credentials=credentials, project=GEE_PROJECT_ID)
+        print("Google Earth Engine initialized via Cloud Service Account securely.")
+    else:
+        # Fallback if file isn't found in current working directory
+        ee.Initialize(project=GEE_PROJECT_ID)
+        print("Google Earth Engine initialized successfully on server cluster.")
 except Exception as e:
     print(f"GEE Cloud Connection Failed: {e}")
 
@@ -69,6 +84,12 @@ def handle_irrigation_request():
     sow_str, cur_str = data.get("sowing_date"), data.get("current_date")
     geom, d1, d2 = data.get("geom"), data.get("dim1"), data.get("dim2")
     custom_water = data.get("custom_water_applied", 0.0)
+
+    # 🌟 FIXED: Extracted incoming metadata fields to prevent NameError crashes
+    state = data.get("state", "N/A")
+    dist = data.get("district", "N/A")
+    tal = data.get("taluka", "N/A")
+    vil = data.get("village", "N/A")
 
     # 1. Pull OpenWeather parameters
     w_url = f"https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={OPENWEATHER_API_KEY}&units=metric"

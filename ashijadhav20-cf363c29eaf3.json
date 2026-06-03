@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "ashijadhav20",
+  "private_key_id": "cf363c29eaf35ce3597fa8474b5b5ed7a2eecc99",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCzYzRMlH312UV/\nV/RjiWt3K/yj+OAcJwBsYDQXnzMxr7FizwmqBfQu6OCO7pfdLTV4cG2ulJBhUdB6\n3LT1Tjq0SFKpV9u+hdHkZIIDTXk4cli7GIrkg00FHbBrcaXJv370JJtGukJvTL8r\nwdmYBNYHwFUu1zEXxzp9urxSV3fBTaTzKU+nVtWdL/3heSEEvZTK9SyyZFLW0cCC\nM2lNp6KAUSo4IhvhNXv8zqVwWeJ6uo+kbO00K6Q0wEDWLABWmjK3tOOo55ZHCid9\nC9Dwv8RuJPaqDikbWaSetY6XqNUVwuY7ti7LY+iBjEx0dEpdzpWmf1KxPjuFm8oS\nle8oxn7JAgMBAAECggEAF35LkCf2YydEYcwcFpkduOrK2JK0jxtQg+EJkXppEv3G\nhoFE676B307icfWvb+kG0rIuuyl7yzMS0bRsAqBvMcMzCDiYb9hIx9ed617PHGRl\nWIN7VTgY8y2TOE8W/lgVAVZ1+4pTPw5XDx0BKVagzT0UKuFF7a5K68Jz/Xi1F1yi\nlpwBAZ8Ffvddku0FHILw9tNom4mH94mOMpUbk5O6OqMlbUl9By86Q1BS+vItDUNF\ne18zcZEpMKxI3INRCoW/qwqxV+LPkOfzBlih7A94AVqaHAn2VTygriLE3xdPeqUw\nxgm8M6LxZwfq8fA9rRgDtjzFNCtmBgi8Bwo8wA0pjQKBgQDlMejgUt7D/XyUlZh8\n17QXguZoppQUbUB/m9Uq5ZW0yBoXwaYfmKKFIZzXp/H4JeChSmEjOslC3gVtsLoQ\nfhVmFUzmEfQPvgiq4k2v0IVDBUNf5DzdbJmkleEzk5PazRwlb8BZmJaKjthuMuD1\nRL6LHAFjYkb91qH5Q8nCbnmPZwKBgQDIXg+uIC645AHl9kmwVEl7jvlHIoHYUIcH\n7WXniBgyqtd6AdX2W5h/p15bD/wQKwZo60e+2xesHlf+ddJopcKu9qANf+uykUCZ\n+YLqfjrNQ3X2I3DELOMUFbsfRyBTFAwmf3hgNU2mMDmUph1hZ/4XayFH5QjF6ueA\nGrKmSqISTwKBgQCH+j5xqHjlyqR4+vAHUWpVcKIGgJ3mKJNVojysQJ27LeTdJ1TJ\n9iKl3bVR9SAH22EUEC7lWeFCPLr3wxwA4O0NLaH79bbZCCPYTn9MyefmRV8dqym5\nLM9S6GE92lakP4BtbYmvHmpiNjGN3727hleN7MWeExaPTyG141P2eNjCDQKBgHVP\n9ThK6XAhNydQGvbdcqSgIj1O690d0OGIUkjMOva3Zi+uEXsLR+89rBX+9uL0fe1C\nDCCnoGWK4pQ+obHZk3HjPfSJeBN1zfAY0VjADWeO3ur89xI1AcMJsiRu/XMG4tJL\ngcw6iTsLMztgQwV74J4PgE3awFc44M/1UbHhMqErAoGAEIA8A5XoTl/9/p9xvGko\n9l1KccxrXfmWVXhWiuFnVpUbWdIX8o5F2SQIFe65ibe9mgPEu0vXcheOGOETDxh8\nfgVXpEuFlioxI2sIWHqNWJ1eWZPwXHfG11HrWmnEEH0i5T2LqdGIm3pj0a385kRQ\n1oUn6GDQRTCl9J0je1ZOiVM=\n-----END PRIVATE KEY-----\n",
+  "client_email": "ashish-jadhav@ashijadhav20.iam.gserviceaccount.com",
+  "client_id": "103260667623538853212",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/ashish-jadhav%40ashijadhav20.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
